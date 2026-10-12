@@ -1,10 +1,27 @@
-# kling-v3-api-ko — AI API 게이트웨이 (한국어)
+# Kling v3 API (`kling-v3`)
 
-> **One OpenAI-compatible key, 300+ models** · image2.5 **$0.0085/image** · Seedance 2.0 Mini **$0.01056/sec** · LLM from **$0.0228 / M tokens** · $1 minimum top-up.
+<!-- conv-kit:v1 -->
 
-**[요금 보기](https://go.apimart.ai/k-da3283)** · **[API 키 발급](https://go.apimart.ai/k-99bafb)**
+<p align="center">
+  <img src="assets/badges/price.svg" alt="observed unit price"> <img src="assets/badges/billing.svg" alt="billing model"> <img src="assets/badges/compat.svg" alt="OpenAI-compatible endpoint">
+</p>
 
-kling-v3-api-ko 는 하나의 `base_url` 과 하나의 키로 300+ 모델을 연결합니다. USD 결제, 종량 과금, 최소 $1 충전.
+<p align="center">
+  <img src="assets/01-product-ad-ceramic-mug-thumb.jpg" width="820" alt="Kling v3 (kling-v3) output preview generated through APIMart">
+</p>
+
+> per generated second, by resolution — one OpenAI-compatible endpoint at `https://api.apimart.ai/v1`, no monthly plan required. *(observed 2026-10-12)*
+
+**[Get an API key](https://go.apimart.ai/k-99bafb)** · **[Live pricing](https://go.apimart.ai/k-5310ec)** · **[Model page](https://go.apimart.ai/k-c509c6)** · [⚡ 60-second quickstart](#quickstart)
+
+**Why teams call Kling v3 (`kling-v3`) through APIMart**
+
+- **Per-second billing, by resolution.** A job is charged for the seconds it actually generates at the resolution you picked — 480P, 720P and 1080P are priced separately, so a 5-second draft costs a fraction of a 15-second 1080P master.
+- **Text-to-video and image-to-video on one id.** The same `kling-v3` endpoint takes a prompt, a first frame, or first and last frames; reference video and reference audio are accepted where the route supports them.
+- **The charge comes back in the response.** Every completed task reports the amount billed (`cost` / `credits_cost`), so a spend number is read per call instead of guessed at month end. A failed task is refunded.
+- **Async by design.** Submit, take the `task_id`, poll `GET /v1/tasks/{id}` — batching and retries are ordinary queue work, not a bespoke integration.
+
+<!-- /conv-kit:v1 -->
 
 ## Published unit prices (snapshot 2026-09-28)
 
