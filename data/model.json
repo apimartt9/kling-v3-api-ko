@@ -1,0 +1,10 @@
+{
+  "id": "kling-v3",
+  "source": "https://apimart.ai/en/pricing",
+  "extracted_at": "2026-10-13T06:43:02Z",
+  "prices": {},
+  "rates": {},
+  "unit": null,
+  "hook": "from $0.0672 per second at 720P (1080P $0.0896 · 1080P+Sound $0.112)",
+  "model_page": "https://apimart.ai/model/kling"
+}
